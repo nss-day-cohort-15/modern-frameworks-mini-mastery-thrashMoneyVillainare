@@ -5,9 +5,12 @@
 </head>
 <body ng-app="FailApp">
   <div ng-controller="theController">
-
-
-
+    <div ng-repeat="flower in flowerData">
+    <ul><li>{{flower.category}}</li></ul>
+    <ul><li>{{flower.title}}</li></ul>
+    <ul><li>{{flower.description}}</li></ul>
+    <ul><li>{{flower.price}}</li></ul>
+    </div>
 
   </div>
   <script type="text/javascript" src="node_modules/angular/angular.min.js"></script>
